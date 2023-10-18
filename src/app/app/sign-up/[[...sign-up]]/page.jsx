@@ -1,10 +1,10 @@
-import { SignIn } from '@clerk/nextjs'
+import { SignUp } from '@clerk/nextjs'
 import React from 'react'
 
 const page = () => {
   return (
     <div className='w-full h-screen flex justify-center items-center'>
-      <SignIn afterSignInUrl={`/`} />
+      <SignUp afterSignUpUrl={`/`} />
     </div>
   )
 }
