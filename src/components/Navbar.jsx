@@ -8,7 +8,7 @@ const Navbar = () => {
     const { userId } = auth();
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-neutral">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -27,7 +27,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link className="inline-block" href={`./`}>
-                    <Image src={`/logo.png`} alt='artistlnk-logo' width={50} height={50} className='inline-block' />
+                    <Image src={`/images/logos/logo.png`} alt='artistlnk-logo' width={50} height={50} className='inline-block' />
                     <span className='inline-block font-bold text-lg align-middle'>Artistlnk</span>
                 </Link>
             </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end mr-5">
                 {
-                    userId ? <UserButton /> : "Get Started" 
+                    userId ? <UserButton afterSignOutUrl={`/`} /> : <a className="btn align-middle">Get Started</a>
                 }
             </div>
         </div>
