@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.25.5",
-    "@clerk/themes": "^1.7.8",
-    "mongoose": "^7.6.3",
-    "next": "13.5.5",
-    "react": "^18",
-    "react-dom": "^18"
+    "@clerk/nextjs": "^4.26.2",
+    "@clerk/themes": "^1.7.9",
+    "mongoose": "^7.6.4",
+    "next": "^14.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10",

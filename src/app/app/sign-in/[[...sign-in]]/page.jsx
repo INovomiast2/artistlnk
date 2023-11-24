@@ -3,8 +3,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='w-full h-screen flex justify-center items-center'>
-      <SignIn afterSignInUrl={`/`} />
+    <div className='flex items-center justify-center w-full h-screen'>
+      <SignIn afterSignInUrl={`/dashboard`} />
     </div>
   )
 }
